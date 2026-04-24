@@ -69,13 +69,14 @@ body {
 .row2 .card { margin-bottom: 0; }
 
 /* ── Seasonal ── */
-.s4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-bottom: 14px; }
+.sc-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-bottom: 14px; }
 .sc { background: #fff; border: .5px solid rgba(0,0,0,0.1); border-radius: 14px; padding: 13px 13px 12px; border-top: 3px solid; }
 .sc.s1 { border-top-color: #2176C7; } .sc.s2 { border-top-color: #F4922A; }
 .sc.s3 { border-top-color: #1A7A5E; } .sc.s4 { border-top-color: #E85C3A; }
-.sc-badge  { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-bottom: 5px; }
+.sc-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-bottom: 5px; }
 .b1 { background: #E6F1FB; color: #0C447C; } .b2 { background: #FAEEDA; color: #633806; }
 .b3 { background: #E1F5EE; color: #085041; } .b4 { background: #FAECE7; color: #712B13; }
+.sc-num { font-size: 9px; font-weight: 700; opacity: 0.6; letter-spacing: 0.02em; }
 .sc-name  { font-size: 13px; font-weight: 700; color: #1a1a2e; margin-bottom: 1px; }
 .sc-range { font-size: 10px; color: #9ca3af; margin-bottom: 8px; }
 .sc-stat  { font-size: 11px; color: #6b7280; margin-bottom: 2px; }
@@ -225,9 +226,9 @@ body {
 
   <!-- 3. Seasonal -->
   <div class="sec">3. Seasonal Analysis — ปี 2567–2568 (เฉพาะปีเต็ม)</div>
-  <div class="s4">
+  <div class="sc-grid">
     <div class="sc s1">
-      <div class="sc-badge b1">เปิดเทอม 1</div>
+      <div class="sc-badge b1"><span class="sc-num">3.1</span>เปิดเทอม 1</div>
       <div class="sc-name">พ.ค. – ก.ย.</div>
       <div class="sc-range">n=10 เดือน</div>
       <div class="divline"></div>
@@ -238,7 +239,7 @@ body {
       <div class="sc-sd">SD = 2,370</div>
     </div>
     <div class="sc s2">
-      <div class="sc-badge b2">ปิดเทอม 1</div>
+      <div class="sc-badge b2"><span class="sc-num">3.2</span>ปิดเทอม 1</div>
       <div class="sc-name">ต.ค.</div>
       <div class="sc-range">n=2 เดือน</div>
       <div class="divline"></div>
@@ -249,7 +250,7 @@ body {
       <div class="sc-sd">SD = 139</div>
     </div>
     <div class="sc s3">
-      <div class="sc-badge b3">เปิดเทอม 2</div>
+      <div class="sc-badge b3"><span class="sc-num">3.3</span>เปิดเทอม 2</div>
       <div class="sc-name">พ.ย. – ก.พ.</div>
       <div class="sc-range">n=8 เดือน</div>
       <div class="divline"></div>
@@ -260,7 +261,7 @@ body {
       <div class="sc-sd">SD = 3,488</div>
     </div>
     <div class="sc s4">
-      <div class="sc-badge b4">ปิดเทอม 2</div>
+      <div class="sc-badge b4"><span class="sc-num">3.4</span>ปิดเทอม 2</div>
       <div class="sc-name">มี.ค. – เม.ย.</div>
       <div class="sc-range">n=4 เดือน</div>
       <div class="divline"></div>
